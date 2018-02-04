@@ -69,7 +69,7 @@ class ViewControllerfordetails: UIViewController ,UITextFieldDelegate{
                             let myjson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                             let pred = myjson["prediction"]!!
                             
-                            
+                            self.displayMessage(userMessage: "I am \(pred)% in favour of installing an ATM here ")
                             let string = "I am \(pred)% in favour of installing an ATM here "
                             let utterance = AVSpeechUtterance(string: string)
                             utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
@@ -98,9 +98,23 @@ class ViewControllerfordetails: UIViewController ,UITextFieldDelegate{
         }
     }
     
-    
+    func displayMessage(userMessage : String) -> Void {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(
+                title: "Result",
+                message: userMessage,
+                preferredStyle: UIAlertControllerStyle.alert
+            )
+            alert.addAction(UIAlertAction(title: "dismiss", style: .default,handler : nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewControllerfordetails.dismissKeyboard))
         view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.

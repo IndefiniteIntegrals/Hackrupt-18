@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class AboutViewController: UIViewController {
+import Speech
+class AboutViewController: UIViewController, SFSpeechRecognizerDelegate {
 
     @IBOutlet weak var myWebView: UIWebView!
     
