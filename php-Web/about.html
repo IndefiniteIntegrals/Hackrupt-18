@@ -1,0 +1,77 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css">
+	  	  <link type="text/css" rel="stylesheet" href="style.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+	 <main>
+  <nav class="red lighten-3">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo">RAMP</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+	  <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="team.html">TEAM</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+	  <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="team.html">TEAM</a></li>
+      </ul>
+    </div>
+  </nav>
+	 <div class="section" id="banner-color">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m9">
+        <h1 class="header center-on-small-only" id="head-color">About</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="section">
+<div class="container">
+Problem Statement
+RAMP has been created keeping in mind the below two problems:
+
+Problems Faced By Bank:
+Calculating the ODDs of a person paying back the loan
+Assessing Location for installation of ATMs
+We have worked diligently for the past 24 hours giving our idea a shape that we wanted to. And we hope that you do like it!
+</div>
+	</div>
+ </main>	
+			
+			<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.2.0/min/dropzone.min.js"></script>
+	<script type='text/javascript' src='https://visual.blobcity.com/javascripts/api/viz_v1.js'></script>
+<script type="text/javascript" >
+	Dropzone.options.imageUpload = {
+        maxFilesize:40,
+        acceptedFiles: ".csv"
+    };
+	(function($){
+	$(function(){
+
+		$('.button-collapse').sideNav();
+
+	}); // end of document ready
+})(jQuery); // end of jQuery name space
+</script>
+</script>
+    </body>
+  </html>

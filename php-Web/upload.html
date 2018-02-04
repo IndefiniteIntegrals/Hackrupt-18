@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+	 <main>
+	 <div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m9">
+        <h1 class="header center-on-small-only">Upload</h1>
+        <h4 class ="light red-text text-lighten-4 center-on-small-only">Data upload.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="section">
+      <div class="container">
+			<form action="fileupload" enctype="multipart/form-data" class="dropzone">
+                 <h5 class="center-align"><i class="medium material-icons">file_upload</i></h5>
+				 <div class="dz-message" data-dz-message><span>Select / Drop your Files to upload.</span></div>
+			</form>  
+		</div>
+	</div>
+ </main>	
+			
+			<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.2.0/min/dropzone.min.js"></script>
+<script type="text/javascript" >
+	Dropzone.options.imageUpload = {
+        maxFilesize:40,
+        acceptedFiles: ".csv"
+    };
+</script>
+</script>
+    </body>
+  </html>
